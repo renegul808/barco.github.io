@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1> asa:v</h1>
+    <canvas id="lienzo" width="500" height="300" style="border:1px solid blue"></canvas>
+   
+    <script type="text/javascript">
+        var lienzo = document.getElementById("lienzo");
+        var dibujo = lienzo.getContext("2d");
+       
+        dibujo.fillStyle = "#01204E";
+        dibujo.fillRect(0, 0, 500, 300);
+       
+        dibujo.fillStyle = "#FFFDB5";
+        dibujo.beginPath();
+        dibujo.arc(390, 60, 54, 0, Math.PI * 2, true);
+        dibujo.closePath();
+        dibujo.fill();
+                dibujo.fillStyle = "#01204E";
+        dibujo.beginPath();
+        dibujo.arc(370, 60, 54, 0, Math.PI * 2, true);
+        dibujo.closePath();
+        dibujo.fill();
+       
+        dibujo.fillStyle = "#FFDA78";
+        dibujo.beginPath();
+        dibujo.arc(370, 60, 54, 0, Math.PI * 2, true);
+        dibujo.closePath();
+        dibujo.fill();
+       
+        dibujo.fillStyle = "rgba(232,236,247,0.5)";
+        dibujo.beginPath();
+        dibujo.arc(10, 200, 80, 0, Math.PI * 2, true);
+        dibujo.arc(88, 220, 46, 0, Math.PI * 2, true);
+        dibujo.arc(154, 199, 30, 0, Math.PI * 2, true);
+        dibujo.arc(232, 210, 62, 0, Math.PI * 2, true);
+        dibujo.arc(320, 205, 25, 0, Math.PI * 2, true);
+        dibujo.arc(380, 200, 44, 0, Math.PI * 2, true);
+        dibujo.arc(442, 208, 23, 0, Math.PI * 2, true);
+        dibujo.arc(498, 200, 41, 0, Math.PI * 2, true);
+        dibujo.closePath();
+        dibujo.fill();
+       
+        var gr = dibujo.createLinearGradient(0, 200, 0, 280);
+        gr.addColorStop(0, "#D3DEF3");
+        gr.addColorStop(1, "#0628A4");
+        dibujo.fillStyle = gr;
+        dibujo.fillRect(0, 200, 500, 300);
+
+        dibujo.beginPath();
+        dibujo.fillStyle = "#656652";
+        dibujo.strokeStyle = "#3C3F09";
+        dibujo.moveTo(300, 219);
+        dibujo.lineTo(360, 219);
+        dibujo.lineTo(368, 203);
+        dibujo.lineTo(296, 206);
+        dibujo.lineTo(300, 219);
+        dibujo.closePath();
+        dibujo.stroke();
+        dibujo.fill();
+       
+        dibujo.beginPath();
+        dibujo.fillStyle = "#3C3F09";
+        dibujo.moveTo(300, 219);
+        dibujo.lineTo(360, 219);
+        dibujo.lineTo(364, 212);
+        dibujo.lineTo(298, 214);
+        dibujo.lineTo(300, 219);
+        dibujo.fill();
+
+        dibujo.fillStyle = "#867048";
+        dibujo.beginPath();
+        dibujo.moveTo(314, 205);
+        dibujo.lineTo(330, 101);
+        dibujo.lineTo(334, 103);
+        dibujo.lineTo(322, 204);
+        dibujo.fill();
+
+        dibujo.fillStyle = "rgba(210,151,50,0.6)";
+        dibujo.beginPath();
+        dibujo.moveTo(333, 105);
+        dibujo.lineTo(378, 194);
+        dibujo.lineTo(322, 188);
+        dibujo.lineTo(333, 105);
+        dibujo.closePath();
+        dibujo.fill();
+
+        dibujo.fillStyle = "#2E7B10";
+        dibujo.beginPath();
+        dibujo.arc(100, 250, 45, -0.3, Math.PI * 1.1, true);
+        dibujo.arc(135, 246, 33, -0.3, Math.PI * 1.1, true);
+        dibujo.closePath();
+        dibujo.fill();
+    </script>
+</body>
+</html>
